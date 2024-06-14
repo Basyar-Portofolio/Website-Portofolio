@@ -38,10 +38,6 @@ import excel from "./excel.png";
 import gs from "./gs.png";
 import pphter from "./pphter.png";
 
-// import Sertifikat
-import sertifikat1 from "./sertifikat/sertifikat1.png";
-import sertifikat2 from "./sertifikat/sertifikat2.png";
-import sertifikat3 from "./sertifikat/sertifikat3.png";
 
 
 export {
@@ -81,7 +77,4 @@ export {
   excel,
   gs,
   pphter,
-  sertifikat1,
-  sertifikat2,
-  sertifikat3
 };

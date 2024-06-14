@@ -1,16 +1,16 @@
+// src/components/Loader.js
+import React from "react";
 import { Html, useProgress } from "@react-three/drei";
+import "./Loader/Loader.css"; //
 
 const Loader = () => {
   const { progress } = useProgress();
 
   return (
-    <Html>
-      
-      <div className="flex flex-row gap-2 mt-32 ">
-        <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-        <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
-        <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-        
+    <Html center>
+      <div className="loader-container mt-36">
+        <div className="spinner"></div>
+        <p className="loading-text">Loading {Math.round(progress)}%</p>
       </div>
     </Html>
   );
