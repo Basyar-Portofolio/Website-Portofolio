@@ -17,11 +17,9 @@ const Hero = () => {
         <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Payroll Officer,<br/> User Excel and HRIS Application
         </p>
-      </div>
-        
+      </div>   
       </div> 
       <ComputersCanvas />
-
     <div className=" absolute xs:bottom-10 bottom-20
     w-full flex justify-center items-center">
       <a href="#about">
