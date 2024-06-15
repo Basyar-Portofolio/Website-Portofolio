@@ -6,10 +6,10 @@ import * as THREE from 'three';
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  const { scene, nodes } = useGLTF("./planet/scene.gltf");
+  const { scene } = useGLTF("./planet/scene.gltf");
 
   useEffect(() => {
-    scene.traverse((child) => {
+    const validateGeometry = (child) => {
       if (child.isMesh) {
         const positions = child.geometry.attributes.position.array;
         for (let i = 0; i < positions.length; i++) {
@@ -19,7 +19,20 @@ const Earth = () => {
           }
         }
       }
-    });
+    };
+
+    scene.traverse(validateGeometry);
+
+    return () => {
+      scene.traverse((child) => {
+        if (child.isMesh) {
+          child.geometry.dispose();
+          if (child.material.isMaterial) {
+            child.material.dispose();
+          }
+        }
+      });
+    };
   }, [scene]);
 
   return (

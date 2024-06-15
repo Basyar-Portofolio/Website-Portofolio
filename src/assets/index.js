@@ -37,6 +37,9 @@ import pph21 from "./pph21.png";
 import excel from "./excel.png";
 import gs from "./gs.png";
 import pphter from "./pphter.png";
+import data from "./data.png";
+import techin from "./techin.png";
+import web3d from "./web3d.png";
 
 
 
@@ -77,4 +80,7 @@ export {
   excel,
   gs,
   pphter,
+  data,
+  techin,
+  web3d
 };

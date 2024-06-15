@@ -7,7 +7,7 @@ const Computers = ({ isMobile }) => {
   const { scene } = useGLTF("./desktop_pc/scene.gltf", true); // Ensure caching with 'true'
 
   useEffect(() => {
-    console.log("isMobile:", isMobile);
+   
   }, [isMobile]);
 
   const scale = isMobile ? 0.6 : 0.8;

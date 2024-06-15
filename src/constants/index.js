@@ -4,9 +4,6 @@ import {
     css,
     reactjs,
     tailwind,
-    carrent,
-    jobit,
-    tripguide,
     teamwork,
     salary,
     coding,
@@ -17,6 +14,9 @@ import {
     excel,
     pph21,
     pphter,
+    data,
+    techin,
+    web3d
   } from "../assets";
   
   export const navLinks = [
@@ -138,33 +138,7 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
+
   const projects = [
     {
       name: "PPh 21 TER 2024",
@@ -184,47 +158,54 @@ import {
       source_code_link: "https://github.com/Basyar-Portofolio/PPh-TER-2024",
     },
     {
-      name: "Job IT",
+      name: "Data Karyawan & Payroll",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Format Excel yang memiliki berbagai sheet dari data karyawan, proses payroll hingga slip gaji. Cocok untuk perusahaan yg belum memakai Software Payroll.",
       tags: [
+      
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
+          name: "Excel",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+        
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image:data,
+      source_code_link: "https://github.com/Basyar-Portofolio/Format-Data-Karyawan",
     },
     {
-      name: "Trip Guide",
+      name: "TikTok Affiliate",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Hanya project iseng, ditengah booming nya tiktok affiliate saat itu pada tahun 2023, saya tertarik untuk mencobanya karena penasaran .",
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
+          name: "tiktok",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: techin,
+      source_code_link: "https://github.com/Basyar-Portofolio/Tiktok-Affiliate",
+    },
+    {
+      name: "Website Portofolio ",
+      description:
+        "3D Website Portofolio pribadi saya, Website ini saya khususnya untuk diri saya sendiri sebagai dokumentasi Pengalaman karir saya .",
+      tags: [
+        {
+          name: "Next.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: web3d,
+      source_code_link: "https://github.com/Basyar-Portofolio/Website-Portofolio",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects, technologies1 };
+  export { services, technologies, experiences, projects, technologies1 };

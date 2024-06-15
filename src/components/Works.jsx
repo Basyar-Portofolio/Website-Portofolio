@@ -38,7 +38,6 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           </div>
       </div>
       </div>
-
         <div className="mt-3"></div>
           <h3 className="text-white font-bold text-[24px]">
             {name}
@@ -58,6 +57,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           </div>
     </Tilt>
   </motion.div>
+  
 );
 
 
@@ -91,7 +91,7 @@ const Works = () => {
       </motion.p>
     </div>
 
-    <div className="mt-20 flex flex-wrap gap-7">
+    <div className="mt-20 flex flex-wrap justify-center gap-10">
       {projects.map((project, index) => (
         <ProjectCard 
         key={`project-${index}`}

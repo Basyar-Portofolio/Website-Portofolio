@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas2,
+
 } from "./components";
 
 const App = () => {
